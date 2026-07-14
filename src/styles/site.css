@@ -2,7 +2,9 @@
     --font-size: 18px;
     --body-background-color: #00010a;
     --menu-background-color: #00010a;
+    --menu-background-transparent-color: rgba(0, 1, 10, 0.75);
     --content-background-color: #000013;
+    --content-border-color: #00217a;
     --body-text-color: #00a2ff;
     --link-text-color: #95d8ff;
     --link-hover-text-color: #ffffff;
@@ -87,7 +89,8 @@ header {
     bottom: 0;
     padding: 1rem;
     display: none;
-    background-color: var(--menu-background-color);
+    background-color: var(--menu-background-transparent-color);
+    backdrop-filter: blur(10px);
     width: 20rem;
 }
 
@@ -97,6 +100,7 @@ header {
 
 #content {
     background-color: var(--content-background-color);
+    border: none;
     padding: 1rem;
     flex: 1;
 }
@@ -120,8 +124,16 @@ header {
     #menu {
         display: block;
         position: static;
+        background-color: var(--menu-background-color);
+        backdrop-filter: none;
     }
     #main header button {
         display: none;
+    }
+
+    #content {
+        border-radius: 0.5rem;
+        border-top: 1px solid var(--content-border-color);
+        border-left: 1px solid var(--content-border-color);
     }
 }
