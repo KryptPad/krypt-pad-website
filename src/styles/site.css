@@ -1,9 +1,9 @@
 :root {
     --font-size: 18px;
-    --body-background-color: #00010a;
-    --menu-background-color: #00010a;
-    --menu-background-transparent-color: rgba(0, 1, 10, 0.75);
-    --content-background-color: #000013;
+    --body-background-color: #000216;
+    --menu-background-color: #000216;
+    --menu-background-transparent-color: #000216cc;
+    --content-background-color: #00000e;
     --content-border-color: #00217a;
     --body-text-color: #00a2ff;
     --link-text-color: #95d8ff;
@@ -46,7 +46,9 @@ a {
     color: var(--link-text-color);
     text-decoration: none;
     transition: var(--transition);
+    cursor: pointer;
 }
+
 a:hover,
 a:focus {
     color: var(--link-hover-text-color);
@@ -88,19 +90,22 @@ header {
     left: 0;
     bottom: 0;
     padding: 1rem;
-    display: none;
+    transform: translateX(-100%);
     background-color: var(--menu-background-transparent-color);
     backdrop-filter: blur(10px);
     width: 20rem;
+    border-right: 1px solid var(--content-border-color);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
 }
 
 #menu.visible {
-    display: block;
+    transform: translateX(0);
 }
 
 #content {
     background-color: var(--content-background-color);
-    border: none;
+    border-top: 1px solid var(--content-border-color);
     padding: 1rem;
     flex: 1;
 }
@@ -126,6 +131,9 @@ header {
         position: static;
         background-color: var(--menu-background-color);
         backdrop-filter: none;
+        transform: none;
+        border: none;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     }
     #main header button {
         display: none;

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../routes/HomeView.vue';
+
 
 // Home
 const router = createRouter({
@@ -7,9 +7,14 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            name: 'Home',
-            component: HomeView,
+            name: 'home',
+            component: () => import('../routes/HomeView.vue'),
         },
+        {
+            path: '/download',
+            name: 'download',
+            component: () => import('../routes/DownloadView.vue'),
+        }
     ],
 });
 
