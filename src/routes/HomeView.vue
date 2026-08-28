@@ -1,5 +1,5 @@
 <template>
-    <h2>Welcome to Krypt Pad</h2>
+    <h1>About Krypt Pad</h1>
 </template>
 
 <script setup lang="ts"></script>

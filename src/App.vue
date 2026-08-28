@@ -4,6 +4,7 @@
             <button @click="toggleMenu">
                 <span class="material-symbols-outlined">menu</span>
             </button>
+            <img src="@/assets/safe.svg" alt="Krypt Pad Logo" class="mr-3" style="height: 4rem;">
             <h1>Krypt Pad</h1>
         </header>
         <div id="main-wrapper">
