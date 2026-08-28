@@ -10,9 +10,10 @@
         <div id="main-wrapper">
             <div id="menu" :class="{ visible: menuVisible }">
                 <ul>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">What happened to the old Krypt Pad?</a></li>
+                    <li><a role="button" @click="goHome()">Home</a></li>
+                    <li><a role="button" @click="goDownload()">Download</a></li>
+                    <li><a role="button" @click="goPrivacy()">Privacy</a></li>
+                    <li><a role="button" @click="goOldKryptPad()">What happened to the old Krypt Pad?</a></li>
                 </ul>
             </div>
             <div id="content">
@@ -25,10 +26,37 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const menuVisible = ref(false);
 const toggleMenu = () => {
     menuVisible.value = !menuVisible.value;
+};
+
+const goHome = () => {
+    menuVisible.value = false;
+    // Use router to navigate to home page
+    router.push({ name: 'home' });
+};
+
+const goDownload = () => {
+    menuVisible.value = false;
+    // Use router to navigate to download page
+    router.push({ name: 'download' });
+};
+
+const goPrivacy = () => {
+    menuVisible.value = false;
+    // Use router to navigate to privacy page
+    router.push({ name: 'privacy' });
+};
+
+const goOldKryptPad = () => {
+    menuVisible.value = false;
+    // Use router to navigate to old Krypt Pad page
+    router.push({ name: 'old-krypt-pad' });
 };
 </script>
 
