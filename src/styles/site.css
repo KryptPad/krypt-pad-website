@@ -104,12 +104,11 @@ header {
     bottom: 0;
     padding: 1rem;
     transform: translateX(-100%);
-    background-color: var(--menu-background-transparent-color);
+    background-color: var(--menu-background-color);
     backdrop-filter: blur(10px);
     width: 16rem;
     backdrop-filter: blur(var(--blur-radius));
     border-right: 1px solid var(--content-border-color);
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.8);
     transition: all 0.2s ease-in-out;
 }
 
@@ -155,7 +154,6 @@ header {
         backdrop-filter: none;
         transform: none;
         border: none;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     }
     #main header button {
         display: none;
