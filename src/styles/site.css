@@ -4,20 +4,80 @@
     --menu-background-color: rgba(43, 43, 46, 0.8);
     --blur-radius: 10px;
     --content-background-color: #333336;
-    --content-boarder-color: #444447;
+    --content-border-color: #444447;
+
     --header-color: #95d8ff;
     --body-text-color: #a5b7c2;
+    --body-text-color-dark: #24292b;
     --link-text-color: #95d8ff;
     --link-hover-text-color: #ffffff;
     --link-active-text-color: #ffffff;
     --link-visited-text-color: #b2e3ff;
     --transition: color 0.2s ease-in-out;
     --border-radius: 0.5rem;
+    /* Button colors */
+    /* Default button colors (white-ish) */
+    --btn-background-color: rgba(226, 243, 253, 0.8);
+    --btn-hover-background-color: rgba(231, 246, 255, 0.9);
+    --btn-active-background-color: rgba(226, 243, 253, 0.8);
+    --btn-border-color: rgba(228, 245, 255, 0.8);
+    --btn-box-shadow-color: rgba(149, 216, 255, 0.5);
+    /* Primary button colors */
+    --btn-primary-background-color: rgba(149, 216, 255, 0.8);
+    --btn-primary-hover-background-color: rgba(149, 216, 255, 0.9);
+    --btn-primary-active-background-color: rgba(149, 216, 255, 0.8);
+    --btn-primary-border-color: rgba(149, 216, 255, 0.8);
+    --btn-primary-box-shadow-color: rgba(149, 216, 255, 0.5);
+
+    /* Card colors */
+    --card-background-color: #3a3a3d;
+    --card-border-color: #4a4a4d;
+    --card-interactive-hover-background-color: rgba(149, 216, 255, 0.8);
+    --card-interactive-hover-border-color: rgba(149, 216, 255, 0.8);
+    --card-interactive-active-background-color: rgba(149, 216, 255, 0.8);
+    --card-interactive-box-shadow-color: rgba(149, 216, 255, 0.5);
 }
 
 /* Utilities */
 .mr-3 {
     margin-right: 1rem;
+}
+
+.m-2
+{
+    margin: 0.5rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Basic HTML elements styling */
@@ -34,7 +94,12 @@ body {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--header-color);
     margin: 0;
 }
@@ -60,6 +125,10 @@ a {
     text-decoration: none;
     transition: var(--transition);
     cursor: pointer;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 a:hover,
@@ -122,7 +191,7 @@ header {
     padding: 1rem;
     margin: 1rem;
     flex: 1;
-    border: 1px solid var(--content-boarder-color);
+    border: 1px solid var(--content-border-color);
     border-radius: var(--border-radius);
 }
 
@@ -143,7 +212,7 @@ header {
 
 @media (min-width: 992px) {
     #main {
-        width:calc(992px - 2rem);
+        width: calc(992px - 2rem);
         margin-left: auto;
         margin-right: auto;
     }
@@ -164,4 +233,86 @@ header {
         border-top: 1px solid var(--content-border-color);
         border-left: 1px solid var(--content-border-color);
     }
+}
+
+/* Components */
+.card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: var(--body-text-color);
+}
+
+.card.card-interactive {
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--body-text-color);
+}
+
+.card.card-interactive:hover {
+    background-color: var(--card-interactive-hover-background-color);
+    border: 1px solid var(--card-interactive-hover-border-color);
+    box-shadow: 0 0 0 3px var(--card-interactive-box-shadow-color);
+    color: var(--body-text-color-dark);
+}
+
+.card.card-interactive:focus {
+    background-color: var(--card-interactive-hover-background-color);
+    border: 1px solid var(--card-interactive-hover-border-color);
+    color: var(--body-text-color-dark);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--card-interactive-box-shadow-color);
+}
+
+.card.card-interactive:active {
+    background-color: var(--card-interactive-active-background-color);
+    box-shadow: 0 0 0 3px var(--card-interactive-box-shadow-color);
+}
+
+.btn {
+    background-color: var(--btn-background-color);
+    border: 1px solid var(--btn-border-color);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--body-text-color);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-background-color);
+    box-shadow: 0 0 0 3px var(--btn-box-shadow-color);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-box-shadow-color);
+}
+
+.btn:active {
+    background-color: var(--btn-active-background-color);
+    box-shadow: 0 0 0 3px var(--btn-box-shadow-color);
+}
+
+.btn.btn-primary {
+    background-color: var(--btn-primary-background-color);
+    border: 1px solid var(--btn-primary-border-color);
+    color: var(--body-text-color-dark);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--btn-primary-hover-background-color);
+    box-shadow: 0 0 0 3px var(--btn-primary-box-shadow-color);
+}
+
+.btn.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-primary-box-shadow-color);
+}
+
+.btn.btn-primary:active {
+    background-color: var(--btn-primary-active-background-color);
+    box-shadow: 0 0 0 3px var(--btn-primary-box-shadow-color);
 }
