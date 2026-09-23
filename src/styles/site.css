@@ -13,7 +13,7 @@
     --link-hover-text-color: #ffffff;
     --link-active-text-color: #ffffff;
     --link-visited-text-color: #b2e3ff;
-    --transition: color 0.2s ease-in-out;
+    --transition: all 0.2s ease-in-out;
     --border-radius: 0.5rem;
     /* Button colors */
     /* Default button colors (white-ish) */
