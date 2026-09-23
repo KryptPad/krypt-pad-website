@@ -17,10 +17,10 @@
     --border-radius: 0.5rem;
     /* Button colors */
     /* Default button colors (white-ish) */
-    --btn-background-color: rgba(226, 243, 253, 0.8);
-    --btn-hover-background-color: rgba(231, 246, 255, 0.9);
-    --btn-active-background-color: rgba(226, 243, 253, 0.8);
-    --btn-border-color: rgba(228, 245, 255, 0.8);
+    --btn-background-color: rgba(58, 58, 61, 0.9);
+    --btn-hover-background-color: rgba(149, 216, 255, 0.9);
+    --btn-active-background-color: rgba(149, 216, 255, 0.9);
+    --btn-border-color: rgba(74, 74, 77, 0.9);
     --btn-box-shadow-color: rgba(149, 216, 255, 0.5);
     /* Primary button colors */
     --btn-primary-background-color: rgba(149, 216, 255, 0.8);
@@ -43,8 +43,11 @@
     margin-right: 1rem;
 }
 
-.m-2
-{
+.m-0{
+    margin: 0;
+}
+
+.m-2 {
     margin: 0.5rem;
 }
 
@@ -62,6 +65,10 @@
 
 .flex-row {
     flex-direction: row;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 .justify-content-center {
@@ -102,6 +109,7 @@ h5,
 h6 {
     color: var(--header-color);
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 * {
@@ -279,16 +287,20 @@ header {
     cursor: pointer;
     color: var(--body-text-color);
     transition: var(--transition);
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
     background-color: var(--btn-hover-background-color);
     box-shadow: 0 0 0 3px var(--btn-box-shadow-color);
+    text-decoration: none;
 }
 
 .btn:focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-box-shadow-color);
+    text-decoration: none;
 }
 
 .btn:active {

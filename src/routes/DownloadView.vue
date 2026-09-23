@@ -6,18 +6,30 @@
             Download Krypt Pad for your platform. Krypt Pad is available for Windows, Mac, and
             Linux. Choose the appropriate version for your operating system.
         </p>
-        <div class="d-flex justify-content-around">
-            <div class="card card-interactive m-2 text-center" tabindex="0">
+        <div class="d-flex justify-content-around align-items-center gap-3">
+            <a
+                href="https://files.kryptpad.com/krypt-pad-Windows-0.1.0-Setup.exe"
+                download
+                class="btn"
+            >
                 Download for Windows
-            </div>
+            </a>
 
-            <div class="card card-interactive m-2 text-center" tabindex="0">
+            <a
+                href="https://files.kryptpad.com/krypt-pad-Windows-0.1.0-Setup.exe"
+                download
+                class="btn"
+            >
                 Download for Mac
-            </div>
+            </a>
 
-            <div class="card card-interactive m-2 text-center" tabindex="0">
-                Download for Linux (Debian/Ubuntu)
-            </div>
+            <a
+                href="https://files.kryptpad.com/krypt-pad-Windows-0.1.0-Setup.exe"
+                download
+                class="btn"
+            >
+                Download for Linux (Ubuntu/Debian)
+            </a>
         </div>
     </div>
 </template>
