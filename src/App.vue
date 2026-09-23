@@ -4,7 +4,7 @@
             <button @click="toggleMenu">
                 <span class="material-symbols-outlined">menu</span>
             </button>
-            <img src="@/assets/safe.svg" alt="Krypt Pad Logo" class="mr-3" style="height: 4rem;">
+            <img src="@/assets/safe.svg" alt="Krypt Pad Logo" class="mr-3" style="height: 4rem" />
             <h1 class="m-0">Krypt Pad</h1>
         </header>
         <div id="main-wrapper">
@@ -13,12 +13,18 @@
                     <li><a role="button" @click="goHome()">Home</a></li>
                     <li><a role="button" @click="goDownload()">Download</a></li>
                     <li><a role="button" @click="goPrivacy()">Privacy</a></li>
-                    <li><a role="button" @click="goOldKryptPad()">What happened to the old Krypt Pad?</a></li>
+                    <li>
+                        <a role="button" @click="goOldKryptPad()"
+                            >What happened to the old Krypt Pad?</a
+                        >
+                    </li>
                 </ul>
             </div>
-            <div id="content">
-                <router-view></router-view>
-                Copyright © {{ new Date().getFullYear() }} Krypt Pad
+            <div id="content-wrapper">
+                <div id="content">
+                    <router-view></router-view>
+                </div>
+                <div class="my-3">Copyright © {{ new Date().getFullYear() }} Krypt Pad</div>
             </div>
         </div>
     </div>
