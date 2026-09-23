@@ -142,7 +142,7 @@ p {
 a:hover,
 a:focus {
     color: var(--link-hover-text-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:active {
     color: var(--link-active-text-color);
