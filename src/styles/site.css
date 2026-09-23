@@ -5,6 +5,7 @@
     --blur-radius: 10px;
     --content-background-color: #333336;
     --content-border-color: #444447;
+    --padding: 1rem;
 
     --header-color: #95d8ff;
     --body-text-color: #a5b7c2;
@@ -36,6 +37,11 @@
     --card-interactive-hover-border-color: rgba(149, 216, 255, 0.8);
     --card-interactive-active-background-color: rgba(149, 216, 255, 0.8);
     --card-interactive-box-shadow-color: rgba(149, 216, 255, 0.5);
+
+    /* Alerts */
+    --alert-danger-background: rgba(160, 0, 0, 0.3);
+    --alert-danger-color: rgba(255, 207, 207, 0.8);
+    --alert-danger-border: 1px solid rgba(185, 0, 0, 0.8);
 }
 
 /* Utilities */
@@ -43,7 +49,7 @@
     margin-right: 1rem;
 }
 
-.m-0{
+.m-0 {
     margin: 0;
 }
 
@@ -218,31 +224,6 @@ header {
     transition: var(--transition);
 }
 
-@media (min-width: 992px) {
-    #main {
-        width: calc(992px - 2rem);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #menu {
-        display: block;
-        position: static;
-        background-color: var(--menu-background-color);
-        backdrop-filter: none;
-        transform: none;
-        border: none;
-    }
-    #main header button {
-        display: none;
-    }
-
-    #content {
-        border-radius: 0.5rem;
-        border-top: 1px solid var(--content-border-color);
-        border-left: 1px solid var(--content-border-color);
-    }
-}
-
 /* Components */
 .card {
     background-color: var(--card-background-color);
@@ -279,6 +260,7 @@ header {
     box-shadow: 0 0 0 3px var(--card-interactive-box-shadow-color);
 }
 
+/* Buttons */
 .btn {
     background-color: var(--btn-background-color);
     border: 1px solid var(--btn-border-color);
@@ -327,4 +309,50 @@ header {
 .btn.btn-primary:active {
     background-color: var(--btn-primary-active-background-color);
     box-shadow: 0 0 0 3px var(--btn-primary-box-shadow-color);
+}
+
+/* Alerts */
+.alert {
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+}
+
+.alert.alert-danger {
+    background-color: var(--alert-danger-background);
+    color: var(--alert-danger-color);
+    border: var(--alert-danger-border);
+}
+
+/* Media queries */
+@media (min-width: 992px) {
+    #main {
+        width: calc(992px - 2rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #menu {
+        display: block;
+        position: static;
+        background-color: var(--menu-background-color);
+        backdrop-filter: none;
+        transform: none;
+        border: none;
+    }
+    #main header button {
+        display: none;
+    }
+
+    #content {
+        border-radius: 0.5rem;
+        border-top: 1px solid var(--content-border-color);
+        border-left: 1px solid var(--content-border-color);
+    }
+}
+
+@media (min-width: 1400px) {
+    #main {
+        width: calc(1400px - 2rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
