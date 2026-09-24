@@ -228,10 +228,11 @@ header {
     transform: translateX(-100%);
     background-color: var(--menu-background-color);
     backdrop-filter: blur(10px);
-    width: 16rem;
+    width: 14rem;
     backdrop-filter: blur(var(--blur-radius));
     border-right: 1px solid var(--content-border-color);
     transition: all 0.2s ease-in-out;
+    flex-shrink: 0;
 }
 
 #menu.visible {
@@ -252,6 +253,7 @@ header {
     flex: 1;
     border: 1px solid var(--content-border-color);
     border-radius: var(--border-radius);
+    
 }
 
 #main header button {
@@ -408,12 +410,12 @@ header {
         display: none;
     }
 
-    #content {
+    #content-wrapper {
         margin-left: 0;
         margin-right: 0;
         border-radius: 0.5rem;
-        border-top: 1px solid var(--content-border-color);
-        border-left: 1px solid var(--content-border-color);
+        /* border-top: 1px solid var(--content-border-color);
+        border-left: 1px solid var(--content-border-color); */
     }
 
     #download-buttons {

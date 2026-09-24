@@ -34,7 +34,7 @@
                 class="btn btn-lg p-5"
             >
                 <span class="material-symbols-outlined">download</span>
-                <span>Download for Linux (Ubuntu/Debian)</span>
+                <span>Download for Linux (.deb)</span>
             </a>
         </div>
 
