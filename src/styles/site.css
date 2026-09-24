@@ -380,6 +380,7 @@ header {
 .alert {
     border-radius: var(--border-radius);
     padding: var(--spacing-3);
+    margin-bottom: var(--spacing-3);
 }
 
 .alert.alert-danger {

@@ -13,18 +13,14 @@
                     <li><a role="button" @click="goHome()">Home</a></li>
                     <li><a role="button" @click="goDownload()">Download</a></li>
                     <li><a role="button" @click="goPrivacy()">Privacy</a></li>
-                    <li>
-                        <a role="button" @click="goOldKryptPad()"
-                            >What happened to the old Krypt Pad?</a
-                        >
-                    </li>
+                    <li><a role="button" @click="goAbout()">About</a></li>
                 </ul>
             </div>
             <div id="content-wrapper">
                 <div id="content">
                     <router-view></router-view>
                 </div>
-                <div class="my-3">Copyright © {{ new Date().getFullYear() }} Krypt Pad</div>
+                <div class="my-3">Copyright © {{ new Date().getFullYear() }} Neptune Century</div>
             </div>
         </div>
     </div>
@@ -59,11 +55,12 @@ const goPrivacy = () => {
     router.push({ name: 'privacy' });
 };
 
-const goOldKryptPad = () => {
+const goAbout = () => {
     menuVisible.value = false;
-    // Use router to navigate to old Krypt Pad page
-    router.push({ name: 'old-krypt-pad' });
+    // Use router to navigate to about page
+    router.push({ name: 'about' });
 };
+
 </script>
 
 <style scoped></style>

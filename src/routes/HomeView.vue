@@ -16,6 +16,20 @@
             Krypt Pad is now a stand-alone app available for Windows, Mac, and Linux (Ubuntu/Debian)
         </p>
     </div>
+
+    <h2>You control your data</h2>
+    <p>
+        Why did we shut down the old Krypt Pad online services? Imagine if your data rested soley in
+        the "cloud" but then suddenly, your internet goes out, or the Krypt Pad server is offline.
+        How would you get to your data? We shut it down because ultimately, it is YOUR data, not
+        ours.
+    </p>
+
+    <p>
+        This isn't the only reason, of course. With any data stored online, there is always an
+        inherent risk of loss or theft. Krypt Pad now puts your data in your hands and you are
+        responsible for it.
+    </p>
 </template>
 
 <script setup lang="ts"></script>
