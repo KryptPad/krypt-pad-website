@@ -15,6 +15,11 @@ const router = createRouter({
             component: () => import('../routes/DownloadView.vue'),
         },
         {
+            path: '/privacy',
+            name: 'privacy',
+            component: () => import('../routes/PrivacyView.vue'),
+        },
+        {
             path: '/about',
             name: 'about',
             component: () => import('../routes/AboutView.vue'),
