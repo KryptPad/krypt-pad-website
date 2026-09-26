@@ -274,7 +274,7 @@ header {
 #download-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
     gap: var(--spacing-3);
 }
