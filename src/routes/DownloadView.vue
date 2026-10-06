@@ -20,7 +20,7 @@
             </a>
 
             <a
-                href="https://files.kryptpad.com/krypt-pad-Windows-0.1.0-Setup.exe"
+                href="https://files.kryptpad.com/Krypt Pad-Mac-0.1.0-Installer.dmg"
                 download
                 class="btn btn-lg p-5"
             >
@@ -29,7 +29,7 @@
             </a>
 
             <a
-                href="https://files.kryptpad.com/krypt-pad-Windows-0.1.0-Setup.exe"
+                href="https://files.kryptpad.com/Krypt Pad-Linux-0.1.0.deb"
                 download
                 class="btn btn-lg p-5"
             >
