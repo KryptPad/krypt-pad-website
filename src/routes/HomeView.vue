@@ -33,6 +33,11 @@
         inherent risk of loss or theft. Krypt Pad now puts your data in your hands and you are
         responsible for it.
     </p>
+
+    <h2>Open Source on GitHub</h2>
+    <p>
+        Krypt Pad is open source software available on <a href="https://github.com/KryptPad/krypt-pad" target="_blank">GitHub</a>. You can view the source code, contribute to the project, or create your own fork.
+    </p>
 </template>
 
 <script setup lang="ts"></script>
