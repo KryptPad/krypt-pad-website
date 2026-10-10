@@ -42,7 +42,7 @@
             Krypt Pad Dekrypter Tool
         </h2>
         <a
-                href="https://files.kryptpad.com/krypt-pad-Windows-0.1.0-Setup.exe"
+                href="https://files.kryptpad.com/krypt-pad-dekrypter.zip"
                 download
                 class="btn btn-lg p-5"
             >
