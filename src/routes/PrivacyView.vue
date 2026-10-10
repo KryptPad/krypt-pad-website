@@ -1,15 +1,15 @@
 <template>
     <h1>Privacy Policy</h1>
     <div>
-        <p class="lead">Updated 9/26/2026</p>
+        <p class="lead">Updated 10/10/2026</p>
         <h2>Personal Information</h2>
         <p>The following outlines what information is collected, and how it is used.</p>
-        <ul>
-            <li>Usage data</li>
+        <ul class="mb-3">
+            <li>Krypt Pad app does NOT collect any personal information</li>
+            <li>Krypt Pad app does NOT collect any usage data</li>
         </ul>
-        <p></p>
 
-        <p>Information gathered will:</p>
+        <!-- <p>If any personal information is gathered, it will:</p>
         <ul>
             <li>
                 Not be used to contact you, unless you expressly give us permission to do so by
@@ -18,8 +18,7 @@
             <li>Not be used to personally identify you</li>
             <li>Not be sold or otherwise given to any third party</li>
             <li>Be used for statistical purposes only</li>
-        </ul>
-        <p></p>
+        </ul> -->
 
         <h2>Security</h2>
         <p>
@@ -31,7 +30,7 @@
             or loss.
         </p>
 
-        <h2>Advertisements</h2>
+        <!-- <h2>Advertisements</h2>
         <p>
             Advertisements displayed on this website are provided by Google. We use third-party
             advertising companies to serve ads when you visit our website. These companies may use
@@ -43,9 +42,9 @@
             <br />
             We are committed to conducting our business in accordance with these principles in order
             to ensure that the confidentiality of personal information is protected and maintained.
-        </p>
+        </p> -->
 
-        <h3>Disclaimer</h3>
+        <h2>Disclaimer</h2>
 
         <p>
             You accept full responsibility for the information you encrypt with Krypt Pad. This

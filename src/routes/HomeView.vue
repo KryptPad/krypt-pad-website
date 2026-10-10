@@ -6,15 +6,18 @@
         stored in files on your devices and not in the cloud. You control where your data is kept.
     </p>
 
-    <div class="alert alert-danger">
+    <div class="alert alert-info">
         <p>
-            As of October 10, 2026, Krypt Pad online services have shut down. If you have downloaded
+            As of October 10, 2026, the old Krypt Pad online services have shut down. If you have downloaded
             your profile, you can decrypt it with the Dekrypter tool.
         </p>
 
         <p>
             Krypt Pad is now a stand-alone app available for Windows, Mac, and Linux (Ubuntu/Debian)
         </p>
+
+        <a href="/download" class="btn btn-primary">Download the new Krypt Pad</a>
+
     </div>
 
     <h2>You control your data</h2>

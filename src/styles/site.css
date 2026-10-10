@@ -8,11 +8,12 @@
     --spacing-3: 1rem;
     --spacing-5: 2.5rem;
 
-    --header-color: rgba(149, 216, 255, 0.9);
-    --header-2-color: rgba(255, 239, 149, 0.9);
+    --header-color: rgba(204, 204, 204, 0.9);
+    --header-2-color: rgba(149, 198, 255, 0.9);
+    --header-2-other-color: rgba(97, 97, 97, 0.9);
     --body-text-color: rgba(165, 183, 194, 0.9);
     --body-text-color-dark: rgba(36, 41, 43, 0.9);
-    --link-text-color: rgba(149, 216, 255, 0.9);
+    --link-text-color: rgba(149, 198, 255, 0.9);
     --link-hover-text-color: #ffffff;
     --link-active-text-color: #ffffff;
     --link-visited-text-color: #b2e3ff;
@@ -44,6 +45,10 @@
     --alert-danger-background: rgba(160, 0, 0, 0.3);
     --alert-danger-color: rgba(255, 207, 207, 0.8);
     --alert-danger-border: 1px solid rgba(185, 0, 0, 0.8);
+
+    --alert-info-background: rgba(0, 69, 160, 0.3);
+    --alert-info-color: rgba(207, 236, 255, 0.8);
+    --alert-info-border: 1px solid rgba(0, 86, 185, 0.8);
 }
 
 .material-symbols-outlined {
@@ -67,6 +72,10 @@
 
 .mr-3 {
     margin-right: var(--spacing-3) !important;
+}
+
+.mb-3 {
+    margin-bottom: var(--spacing-3) !important;
 }
 
 .mb-5 {
@@ -99,11 +108,11 @@
 }
 
 .flex-column {
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .flex-row {
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 .align-items-center {
@@ -155,6 +164,9 @@ h1 {
 }
 h2 {
     color: var(--header-2-color);
+}
+h2.other {
+    color: var(--header-2-other-color);
 }
 
 * {
@@ -253,7 +265,6 @@ header {
     flex: 1;
     border: 1px solid var(--content-border-color);
     border-radius: var(--border-radius);
-    
 }
 
 #main header button {
@@ -391,6 +402,12 @@ header {
     border: var(--alert-danger-border);
 }
 
+.alert.alert-info {
+    background-color: var(--alert-info-background);
+    color: var(--alert-info-color);
+    border: var(--alert-info-border);
+}
+
 /* Media queries */
 @media (min-width: 992px) {
     #main {
@@ -423,7 +440,8 @@ header {
     }
 
     .btn {
-        width: auto;
+        display: inline-flex;
+        width: auto !important;
     }
 }
 
