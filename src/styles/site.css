@@ -1,9 +1,9 @@
 :root {
     --font-size: 18px;
-    --body-background-color: #2b2b2e;
-    --menu-background-color: rgba(43, 43, 46, 0.8);
-    --blur-radius: 10px;
-    --content-background-color: #333336;
+    --body-background-color: #19191a;
+    --menu-background-color: transparent;
+    --blur-radius: 25px;
+    --content-background-color: #232325;
     --content-border-color: #444447;
     --spacing-3: 1rem;
     --spacing-5: 2.5rem;
@@ -240,9 +240,11 @@ header {
     transform: translateX(-100%);
     background-color: var(--menu-background-color);
     backdrop-filter: blur(10px);
-    width: 14rem;
+    width: 18rem;
     backdrop-filter: blur(var(--blur-radius));
     border-right: 1px solid var(--content-border-color);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
     transition: all 0.2s ease-in-out;
     flex-shrink: 0;
 }
@@ -422,6 +424,7 @@ header {
         backdrop-filter: none;
         transform: none;
         border: none;
+        width: 14rem;
     }
     #main header button {
         display: none;

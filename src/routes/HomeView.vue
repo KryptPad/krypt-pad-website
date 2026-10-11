@@ -8,8 +8,8 @@
 
     <div class="alert alert-info">
         <p>
-            As of October 10, 2026, the old Krypt Pad online services have shut down. If you have downloaded
-            your profile, you can decrypt it with the Dekrypter tool.
+            As of October 10, 2026, the old Krypt Pad online services have shut down. If you have
+            downloaded your profile, you can decrypt it with the Dekrypter tool.
         </p>
 
         <p>
@@ -17,7 +17,6 @@
         </p>
 
         <a href="/download" class="btn btn-primary">Download the new Krypt Pad</a>
-
     </div>
 
     <h2>You control your data</h2>
@@ -36,7 +35,9 @@
 
     <h2>Open Source on GitHub</h2>
     <p>
-        Krypt Pad is open source software available on <a href="https://github.com/KryptPad/krypt-pad" target="_blank">GitHub</a>. You can view the source code, contribute to the project, or create your own fork.
+        Krypt Pad is open source software available on
+        <a href="https://github.com/KryptPad/krypt-pad" target="_blank">GitHub</a>. You can view the
+        source code, contribute to the project, or create your own fork.
     </p>
 </template>
 
