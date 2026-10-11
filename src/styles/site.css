@@ -1,8 +1,8 @@
 :root {
     --font-size: 18px;
     --body-background-color: #19191a;
-    --menu-background-color: transparent;
-    --blur-radius: 25px;
+    --menu-background-color: rgba(25, 25, 26, 0.7);;
+    --blur-radius: 15px;
     --content-background-color: #232325;
     --content-border-color: #444447;
     --spacing-3: 1rem;
@@ -247,6 +247,7 @@ header {
     border-bottom-right-radius: var(--border-radius);
     transition: all 0.2s ease-in-out;
     flex-shrink: 0;
+    z-index: 1;
 }
 
 #menu.visible {
